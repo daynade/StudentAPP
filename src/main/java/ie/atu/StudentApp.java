@@ -19,10 +19,13 @@ public class StudentApp {
             String name = sc.nextLine();
             System.out.println("Enter your student email");
             String email = sc.nextLine();
-            System.out.println("Enter your student password");
-            String password = sc.nextLine();
+            System.out.println("Enter your student ID");
+            String studentID = sc.nextLine();
             Student student1 = new Student(); //created student object
             students.add(student1); //adding new student to arraylist
+            student1.setName(name);
+            student1.setEmail(email);
+            student1.setID(studentID);
             i++;
         }
     }
